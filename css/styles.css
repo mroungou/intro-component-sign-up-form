@@ -1,0 +1,17 @@
+body {
+  margin: 2rem;
+  display: inline-flex;
+}
+
+.main-ad {
+  width: 25vw;
+  height: fit-content;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
