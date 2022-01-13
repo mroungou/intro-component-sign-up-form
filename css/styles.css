@@ -1,11 +1,102 @@
 body {
-  margin: 2rem;
+  background: url(/images/bg-intro-desktop.png), hsl(0, 100%, 74%);
+  height: 100vh;
+  /* margin: 2rem; */
+  padding: 2rem 8rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
   display: inline-flex;
 }
 
 .main-ad {
-  width: 25vw;
-  height: fit-content;
+  padding: 10rem 0rem;
+  color: #fff;
+}
+
+.free-trial,
+.main-ad {
+  width: 50%;
+  margin: 1rem;
+}
+
+.main-ad h1 {
+  font-size: 3rem;
+}
+
+.card-header {
+  border: 1px solid hsl(248, 32%, 49%);
+  padding: 0.5rem;
+  border-radius: 10px;
+  background: hsl(248, 32%, 49%);
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-header p {
+  font-weight: 400;
+}
+
+.trial {
+  font-weight: 600;
+}
+
+.form-card {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.fields {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-card p {
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+}
+
+.form-card p > a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.submit {
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  border: 1px solid hsl(154, 59%, 51%);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+.shadow-light {
+  /* box-shadow: 0 8px 1px; */
+}
+
+.shadow-dark {
+  box-shadow: 0 8px 1px hsl(0deg 0% 21% / 26%);
 }
 
 .attribution {
