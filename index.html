@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="index.js"></script>
 
     <link
       rel="icon"
@@ -34,7 +35,7 @@
           <p><span class="trial">Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
         <div class="form-card shadow-dark">
-          <form action="">
+          <form name="signUp" action="" onsubmit="return validateForm()">
             <input class="fields"
               type="text"
               id="firstName"
