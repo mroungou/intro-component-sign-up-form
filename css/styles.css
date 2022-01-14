@@ -68,6 +68,10 @@ main {
   text-align: center;
 }
 
+span {
+  font-weight: 500;
+}
+
 .form-card p > a {
   color: hsl(0, 100%, 74%);
   font-weight: 600;
@@ -92,7 +96,7 @@ main {
 }
 
 .shadow-light {
-  /* box-shadow: 0 8px 1px; */
+  box-shadow: 0 6px 1px hsl(153, 24%, 82%);
 }
 
 .shadow-dark {
@@ -105,4 +109,37 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    padding: 2rem;
+  }
+
+  main {
+    display: block;
+  }
+
+  .main-ad {
+    padding: 2rem 0;
+    margin: 2.5rem 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .main-ad h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-header p {
+    margin: 1rem 3rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .free-trial,
+  .main-ad {
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
