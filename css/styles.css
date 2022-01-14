@@ -1,5 +1,5 @@
 body {
-  background: url(/images/bg-intro-desktop.png), hsl(0, 100%, 74%);
+  background: url(images/bg-intro-desktop.png), hsl(0, 100%, 74%);
   height: 100vh;
   /* margin: 2rem; */
   padding: 2rem 8rem;
