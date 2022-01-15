@@ -41,35 +41,22 @@
           </p>
         </div>
         <div class="form-card shadow-dark">
-          <form name="signUp" action="" onsubmit="return validate()">
-            <input
-              class="fields"
-              type="text"
-              id="firstName"
-              name="firstName"
-              placeholder="First Name"
-            />
-            <input
-              class="fields"
-              type="text"
-              id="lastName"
-              name="lastName"
-              placeholder="Last Name"
-            />
-            <input
-              class="fields"
-              type="email"
-              id="emailAddress"
-              name="emailAddress"
-              placeholder="Email Address"
-            />
-            <input
-              class="fields"
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Password"
-            />
+          <form id="signUp" action="">
+            <div class="input-field">
+              <input type="text" name="first_name" placeholder="First Name" />
+            </div>
+            <div class="input-field">
+              <input type="text" name="last_name" placeholder="Last Name" />
+            </div>
+
+            <div class="input-field">
+              <input type="email" name="email" placeholder="Email Address" />
+            </div>
+
+            <div class="input-field">
+              <input type="password" name="password" placeholder="Password" />
+            </div>
+
             <button type="submit" class="submit shadow-light">
               Claim your free trial
             </button>
