@@ -12,6 +12,18 @@ function isEmail(email) {
     return email.match(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g)
 }
 
+function reset(form) {
+    const errorFields = form.getElementsByClassName('has-error')
+    
+    for (let i = 0; i < errorFields.length; i++) {
+        const errorTexts = errorFields[i].getElementsByClassName('error-text');
+
+        for (let index = 0; index < errorTexts.length; index++) {
+            errorTexts[index].remove();
+        }
+    }
+}
+
 
 function isValid(form) {
     let inputFields = form.getElementsByTagName('input')
@@ -67,6 +79,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('signUp')
     
     form.addEventListener('submit', function(event) {
+        reset(form)
 
         if (isValid(form)) {
             form.classList.add('success')
